@@ -16,16 +16,24 @@
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: grayscale(100%) opacity(0.7);
 }
 
 .software-skill-inline > i:hover {
-  color: $skillsColor;
+  transform: translateY(-5px) scale(1.1);
+  filter: grayscale(0%) opacity(1) brightness(1.1);
 }
+
 .software-skill-inline > p {
   color: $subTitle;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+
+.software-skill-inline:hover > p {
+  opacity: 1;
 }

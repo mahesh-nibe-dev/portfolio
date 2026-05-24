@@ -4,11 +4,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 5%;
+  padding: 50px 5%;
 }
 
 .projects-container-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .project-title {
@@ -22,7 +22,7 @@
 .case-studies-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 24px;
 }
 
 /* Case Study Card (Minimal modern style) */
@@ -30,7 +30,7 @@
   background-color: #0a0a0a;
   border: 1px solid #222222;
   border-radius: 8px;
-  padding: 30px;
+  padding: 24px;
   transition: transform 0.2s ease, border-color 0.2s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   display: flex;

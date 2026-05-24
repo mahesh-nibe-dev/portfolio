@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext} from "react";
 import {Fade} from "../../components/motion/Reveal";
 import "./Greeting.scss";
 import Button from "../../components/button/Button";
@@ -8,31 +8,7 @@ import StyleContext from "../../contexts/StyleContext";
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   
-  const [terminalText, setTerminalText] = useState("");
-  const fullText = `> Initializing system...
-> Loading core modules...
-> Connecting to database...
-> [OK] PostgreSQL cluster reachable
-> Starting HTTP server on port 8080...
-> [OK] Server ready to accept connections.
-> _`;
 
-  useEffect(() => {
-    let currentText = "";
-    let currentIndex = 0;
-    
-    const interval = setInterval(() => {
-      if (currentIndex < fullText.length) {
-        currentText += fullText[currentIndex];
-        setTerminalText(currentText);
-        currentIndex++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 40);
-    
-    return () => clearInterval(interval);
-  }, [fullText]);
 
   if (!greeting.displayGreeting) {
     return null;
@@ -88,20 +64,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          
-          <div className="greeting-terminal-div">
-            <div className="terminal-window">
-              <div className="terminal-header">
-                <div className="terminal-button red"></div>
-                <div className="terminal-button yellow"></div>
-                <div className="terminal-button green"></div>
-                <div className="terminal-title">server.log</div>
-              </div>
-              <div className="terminal-body">
-                <pre>{terminalText}</pre>
-              </div>
-            </div>
-          </div>
+
 
         </div>
       </div>

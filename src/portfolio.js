@@ -19,10 +19,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Mahesh Nibe",
-  title: "dev:~$ Mahesh Nibe",
+  username: "SysD_Mahesh",
+  title: "SysD_Mahesh",
   subTitle: emoji(
-    "IT Engineering student & Summer 2026 SDE Intern Candidate. Focused on high-performance backend systems, custom C++ compiler engineering, and distributed architectures. Passionate about systems-level optimizations, robust RDBMS schema design, and Dockerized production environments."
+    "I'm Mahesh Nibe, an IT Engineering student & Summer 2026 SDE Intern Candidate. Focused on high-performance backend systems, custom C++ compiler engineering, and distributed architectures. Passionate about systems-level optimizations, robust RDBMS schema design, and Dockerized production environments."
   ),
   resumeLink: "/resume.pdf",
   displayGreeting: true 
@@ -43,24 +43,23 @@ const skillsSection = {
   title: "Core Competencies",
   subTitle: "I am deeply passionate about the unseen infrastructure that powers the web. My engineering philosophy revolves around writing code that respects physical hardware boundaries—prioritizing efficient algorithms, predictable memory management, and scalable data schemas. Rather than just consuming frameworks, I strive to understand database internals, compiler mechanics, and network bottlenecks.",
   skills: [
-    emoji("⚡ Systems & Architectures: Designing scalable, distributed backend environments with Java (Spring Boot 3) and Node.js/Express, focusing on high-throughput microservice communications."),
-    emoji("⚡ Data Modeling & Isolation: Designing 3NF relational schemas in PostgreSQL/MySQL, utilizing optimized query indexing, connection pooling, and low-level SQL triggers to enforce transaction integrity."),
-    emoji("⚡ Memory Caching & Rate Limiting: Implementing ultra-low latency sliding window rate limiters and atomic caching mechanisms with Redis cluster setups."),
-    emoji("⚡ Systems & Compiler Engineering: Writing performant low-level pipelines in C++ including hand-crafted lexical tokenizers, AST parsers, and custom 8-bit assembly generation."),
-    emoji("⚡ Production Infrastructure & Containerization: Orchestrating multi-tier architectures with secure, multi-stage Docker builds, Docker Compose networks, and reverse-proxied, high-concurrency Nginx configurations.")
+    "▹ Systems & Architectures: Designing scalable, distributed backend environments with Java (Spring Boot 3) and Node.js/Express, focusing on high-throughput microservice communications.",
+    "▹ Data Modeling & Isolation: Designing 3NF relational schemas in PostgreSQL/MySQL, utilizing optimized query indexing, connection pooling, and low-level SQL triggers to enforce transaction integrity.",
+    "▹ Memory Caching & Rate Limiting: Implementing ultra-low latency sliding window rate limiters and atomic caching mechanisms with Redis cluster setups.",
+    "▹ Systems & Compiler Engineering: Writing performant low-level pipelines in C++ including hand-crafted lexical tokenizers, AST parsers, and custom 8-bit assembly generation.",
+    "▹ Production Infrastructure & Containerization: Orchestrating multi-tier architectures with secure, multi-stage Docker builds, Docker Compose networks, and reverse-proxied, high-concurrency configurations."
   ],
   softwareSkills: [
-    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-    { skillName: "Spring Boot", fontAwesomeClassname: "fas fa-leaf" },
-    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
-    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "MySQL", fontAwesomeClassname: "fas fa-server" },
-    { skillName: "Redis", fontAwesomeClassname: "fas fa-bolt" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-    { skillName: "Nginx", fontAwesomeClassname: "fas fa-network-wired" }
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java", style: { color: "#f89820" } },
+    { skillName: "Spring Boot", fontAwesomeClassname: "fas fa-leaf", style: { color: "#6db33f" } },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code", style: { color: "#00599c" } },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python", style: { color: "#3776ab" } },
+    { skillName: "Node.js", fontAwesomeClassname: "fab fa-node", style: { color: "#339933" } },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react", style: { color: "#61dafb" } },
+    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database", style: { color: "#336791" } },
+    { skillName: "MySQL", fontAwesomeClassname: "fas fa-server", style: { color: "#4479a1" } },
+    { skillName: "Redis", fontAwesomeClassname: "fas fa-bolt", style: { color: "#dc382d" } },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker", style: { color: "#2496ed" } }
   ],
   display: true 
 };
@@ -93,7 +92,7 @@ const architectureSection = {
       id: "deployment",
       title: "Systems & Infrastructure",
       icon: "fab fa-docker",
-      content: "Experienced in packaging robust application environments using multi-stage Docker builds, Docker Compose files, and SPA-routing configured Nginx reverse proxies, effectively minimizing deployment footprints and isolating runtime dependencies."
+      content: "Experienced in packaging robust application environments using multi-stage Docker builds, Docker Compose files, and SPA-routing configured reverse proxies, effectively minimizing deployment footprints and isolating runtime dependencies."
     },
     {
       id: "compilers",
