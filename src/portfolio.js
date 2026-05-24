@@ -24,7 +24,7 @@ const greeting = {
   subTitle: emoji(
     "I'm Mahesh Nibe, an IT Engineering student & Summer 2026 SDE Intern Candidate. Focused on high-performance backend systems, custom C++ compiler engineering, and distributed architectures. Passionate about systems-level optimizations, robust RDBMS schema design, and Dockerized production environments."
   ),
-  resumeLink: "/resume.pdf",
+  resumeLink: "/Mahesh_Nibe_Resume.pdf",
   displayGreeting: true 
 };
 
