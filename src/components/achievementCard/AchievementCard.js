@@ -7,7 +7,7 @@ export default function AchievementCard({cardInfo, isDark}) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
+    var win = window.open(url, "_blank", "noopener,noreferrer");
     win.focus();
   }
 
