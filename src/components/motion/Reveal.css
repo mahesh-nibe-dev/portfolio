@@ -1,0 +1,27 @@
+.reveal-wrapper {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.translate-y-dist {
+  transform: translateY(30px);
+}
+
+.translate-y-neg-dist {
+  transform: translateY(-30px);
+}
+
+.translate-x-dist {
+  transform: translateX(30px);
+}
+
+.translate-x-neg-dist {
+  transform: translateX(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translate(0, 0) !important;
+}

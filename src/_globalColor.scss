@@ -1,0 +1,86 @@
+/* 
+   New Premium Dark-Mode Engineering Aesthetic 
+   Style Reference: Linear, Vercel, Stripe Developer 
+*/
+
+// Button System (Minimal, Bordered)
+$buttonColor: #111111;
+$buttonHover: #222222;
+$topButtonHover: #333333;
+
+// Text Colors (Monochrome, high contrast primary, low contrast secondary)
+$titleColor: #ededed;
+$textColor: #ededed;
+$subTitle: #a1a1aa;
+$cardSubtitle: #888888;
+$talkCardSubTitle: #888888;
+$blogCardTitleColor: #ededed;
+
+// Dark Theme Text
+$textColorDark: #ededed;
+
+// Toggle Switch (Subtle)
+$toggleCheck: #333333;
+$toggleSwitchSliderBG: #222222;
+
+// GitHub Repo Colors (Overridden for minimal look)
+$githubRepoCardLanguageColorBG: #333333;
+$githubRepoCardColor: #ededed;
+$githubRepoCardRepoCardStatsColor: #a1a1aa;
+$githubRepoCardRepoNameColor: #ffffff;
+$githubProfileCardLocationTS: #a1a1aa;
+$githubProfileCardBorder: #333333;
+
+// Backgrounds (Deep darks)
+$lightBackground1: #000000;
+$lightBackground2: #0a0a0a;
+$lightBackground3: #111111;
+$blogCardContainerColor: #0a0a0a;
+
+$darkBackground: #000000;
+
+// Box Shadows (Subtle borders instead of large shadows)
+$lightBoxShadowDark: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+$lightBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+$lightBoxShadowDarker: 0 10px 15px -3px rgba(0, 0, 0, 0.7);
+
+$darkBoxShadow: 0 0 0 1px #222222; /* Use shadow as a subtle border */
+$darkBoxShadow2: 0 0 0 1px #333333;
+
+// Gradients (Avoid excessive gradients, keep them extremely subtle)
+$experienceCardBlurredDivLG: linear-gradient(rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 0.9));
+$experienceCardBannerLG: linear-gradient(rgba(17, 17, 17, 0.9), rgba(0, 0, 0, 1));
+
+// Borders
+$progressBarBackground: #222222;
+$lightBorder1: #333333;
+$educationCardBorder: #222222;
+
+// Hovers
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.05);
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.1);
+$headerHoverBG: #111111;
+$contactDetailHoverTS: #ffffff;
+
+// Misc Backgrounds
+$progressBarSpanBG: #ededed;
+$iconBackground: #111111;
+$appHeaderBG: #000000;
+
+// Misc Colors
+$skillsColor: #ededed;
+$appLink: #ffffff;
+
+// Social Media Icons (Monochrome approach for premium look)
+$faceBook: #ededed;
+$linkedin: #ededed;
+$github: #ededed;
+$gitlab: #ededed;
+$google: #ededed;
+$twitter: #ededed;
+$medium: #ededed;
+$stackoverflow: #ededed;
+$instagram: #ededed;
+$kaggle: #ededed;
+$whatsapp: #ededed;
+$phone: #ededed;

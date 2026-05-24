@@ -1,0 +1,229 @@
+@import "../../_globalColor";
+
+.greet-main {
+  position: relative;
+  width: 100%;
+  padding: 60px 5%;
+  margin: 0px auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Subtle Grid Background for engineering vibe */
+.hero-grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  z-index: -1;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+}
+
+.greeting-main {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 60px;
+}
+
+.greeting-text-div {
+  flex: 1.2;
+}
+
+.greeting-terminal-div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.greeting-text {
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: $textColor !important;
+  margin: 0;
+}
+
+.greeting-text-p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #888888 !important;
+  margin-top: 24px;
+  max-width: 540px;
+}
+
+.tech-stack-indicators {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  color: #a1a1aa;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid #222222;
+  width: max-content;
+}
+
+.tech-stack-indicators .dot {
+  color: #444444;
+}
+
+.button-greeting-div {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 10px;
+}
+
+.hero-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #a1a1aa;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.hero-social-icon:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Terminal Window Styles */
+.terminal-window {
+  width: 100%;
+  max-width: 500px;
+  background-color: #0a0a0a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.terminal-window:hover {
+  transform: translateY(-5px);
+  border-color: #444444;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #111111;
+  border-bottom: 1px solid #222222;
+  position: relative;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.terminal-button.red { background-color: #ff5f56; }
+.terminal-button.yellow { background-color: #ffbd2e; }
+.terminal-button.green { background-color: #27c93f; }
+
+.terminal-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #888888;
+}
+
+.terminal-body {
+  padding: 24px;
+  min-height: 250px;
+  background-color: #050505;
+}
+
+.terminal-body pre {
+  margin: 0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  color: #33ff33;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Media Queries */
+@media (max-width: 1380px) {
+  .greeting-text { font-size: 56px; }
+  .greeting-text-p { font-size: 18px; }
+}
+
+@media (max-width: 992px) {
+  .greeting-main {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+  .greeting-terminal-div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .greet-main {
+    padding: 40px 5%;
+  }
+  .greeting-text {
+    font-size: 40px;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+  }
+  .tech-stack-indicators {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .hero-social-links {
+    margin-left: 0;
+  }
+}
